@@ -1,17 +1,25 @@
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 80%;
-} */
+body {
+  font-family: "kiddosy Free Regular";
+}
+ul > li {
+  color: #6a371a;
+}
 
-/* .ijapa-logo {
-  padding: 10px;
-  margin-left: 20px;
-  background-color: red;
+.hero-text {
+  color: #3e6100;
   margin-left: 20px;
 }
-nav > ul li {
-  display: inline;
-  padding: 10px;
-} */
+
+.hero {
+  background-image: url(../src/ijapa-assets-main/header_bcg.png);
+  /* background: linear-gradient(
+    181deg,
+    #b1daff -1.99%,
+    rgba(177, 218, 255, 0.2) 82.79%
+  ); */
+  /* background-position: center; */
+  height: 100vh;
+  /* -webkit-background-size: cover; */
+  /* -moz-background-size: cover; */
+  background-size: cover;
+}
