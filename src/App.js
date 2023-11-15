@@ -1,16 +1,20 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Folktales from "./components/Folktales";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App hero ">
+    <div>
       <header className="App-header">
-        <Navbar />
+        {/* <Navbar /> */}
         <Hero />
+        <Folktales />
+        <Footer />
       </header>
     </div>
   );
 }
 
 export default App;
+// className = "bg-[url('../src/ijapa-assets-main/header_bcg.png')]";

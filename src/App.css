@@ -10,16 +10,29 @@ ul > li {
   margin-left: 20px;
 }
 
-.hero {
+/* .hero {
   background-image: url(../src/ijapa-assets-main/header_bcg.png);
-  /* background: linear-gradient(
-    181deg,
-    #b1daff -1.99%,
-    rgba(177, 218, 255, 0.2) 82.79%
-  ); */
-  /* background-position: center; */
   height: 100vh;
-  /* -webkit-background-size: cover; */
-  /* -moz-background-size: cover; */
   background-size: cover;
+} */
+
+.bg-gradient {
+  background: linear-gradient(1deg, #371f11 -74.74%, #723e21 89%);
+  height: 70vh;
+}
+
+.bg-gradient h1 {
+  padding-top: 40px;
+}
+
+span {
+  display: block;
+  background-color: #fae57a;
+  width: 15px;
+  border-radius: 50%;
+  color: black;
+  /* padding: var(--FLUSH, 9.5px) var(--FLUSH, 0px); */
+}
+
+.list-right li span {
 }
