@@ -2,6 +2,7 @@ import "./App.css";
 import Hero from "./components/Hero";
 import Folktales from "./components/Folktales";
 import Footer from "./components/Footer";
+import Feature from "./components/Feature";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         {/* <Navbar /> */}
         <Hero />
         <Folktales />
+        <Feature />
         <Footer />
       </header>
     </div>

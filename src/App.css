@@ -36,3 +36,32 @@ span {
 
 .list-right li span {
 }
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-pic {
+  width: 800px;
+  padding: 10px;
+  margin-left: 50px;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+li::marker {
+  color: tomato;
+}
+
+.list {
+  list-style-type: square;
+  line-height: 40px;
+}
