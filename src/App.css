@@ -37,8 +37,8 @@ span {
   font-size: 18px;
 }
 
-.list-right li span {
-}
+/* .list-right li span {
+} */
 
 .footer-list {
   display: flex;
@@ -67,4 +67,56 @@ li::marker {
 .list {
   list-style-type: square;
   line-height: 40px;
+}
+
+.policyPop {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* width: ; */
+}
+
+.flex-paragraph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.policy {
+  font-size: 64px;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.icon {
+  aspect-ratio: 1;
+}
+
+.modal {
+  /* display: none; */
+  width: 80%;
+  max-width: 60rem;
+  background-color: white;
+  margin: 15% auto;
+  padding: 2rem;
+  border: 1px solid #777;
+  text-align: center;
+  animation: slide ease 0.8s;
+  overflow: hidden;
+}
+
+.modal-body {
+  /* display: none; */
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0, 0.5);
+  z-index: 1;
 }

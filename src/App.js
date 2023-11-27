@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Folktales from "./components/Folktales";
 import Footer from "./components/Footer";
 import Feature from "./components/Feature";
+import Popup from "./components/Popup";
 
 function App() {
   return (

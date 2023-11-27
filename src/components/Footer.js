@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import layerLogo from "../ijapa-assets-main/Layer_1 (3).png";
 import { Icon } from "@fortawesome/fontawesome-svg-core";
+import Popup from "./Popup";
 
 export default function Footer() {
+  const [popup, setPopup] = useState(false);
+
+  function handlePopup() {
+    setPopup(true);
+  }
+
   return (
     <div className="h-[32rem] bg-black  ">
       <div className="text-center text-white flex justify-center items-center flex-col">
@@ -36,7 +43,11 @@ export default function Footer() {
       </div>
       <div className="footer-list">
         <ul className=" flex justify-start items-start ">
-          <li className="m-5 text-white">Terms & conditions</li>
+          <a href="#">
+            <li className="m-5 text-white" onClick={handlePopup}>
+              Terms & conditions
+            </li>
+          </a>
           <li className="m-5 text-white"> Privacy policy</li>
           <li className="m-5 text-white">Help center</li>
         </ul>
@@ -49,6 +60,10 @@ export default function Footer() {
       <small className="text-white flex justify-center items-center font-[14px]">
         Copyright 2023, Verazoom Limited. All rights reserved
       </small>
+
+      {popup && <Popup x={popup} y={setPopup} />}
     </div>
   );
 }
+
+//  <Popup />
