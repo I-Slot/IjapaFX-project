@@ -2,12 +2,17 @@ import React, { useState } from "react";
 import layerLogo from "../ijapa-assets-main/Layer_1 (3).png";
 import { Icon } from "@fortawesome/fontawesome-svg-core";
 import Popup from "./Popup";
+import PrivacyPopup from "./PolicyPopup";
 
 export default function Footer() {
   const [popup, setPopup] = useState(false);
+  const [privacy, setPrivacy] = useState(false);
 
   function handlePopup() {
     setPopup(true);
+  }
+  function handlePrivacyPopup() {
+    setPrivacy(true);
   }
 
   return (
@@ -48,7 +53,10 @@ export default function Footer() {
               Terms & conditions
             </li>
           </a>
-          <li className="m-5 text-white"> Privacy policy</li>
+          <li className="m-5 text-white" onClick={handlePrivacyPopup}>
+            {" "}
+            Privacy policy
+          </li>
           <li className="m-5 text-white">Help center</li>
         </ul>
         <ul className="flex justify-end mx-10  ">
@@ -62,6 +70,7 @@ export default function Footer() {
       </small>
 
       {popup && <Popup x={popup} y={setPopup} />}
+      {privacy && <PrivacyPopup m={privacy} n={setPrivacy} />}
     </div>
   );
 }

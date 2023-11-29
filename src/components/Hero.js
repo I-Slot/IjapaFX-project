@@ -1,15 +1,24 @@
 import React from "react";
+import { useState } from "react";
 import heroImage from "../ijapa-assets-main/Isolation_Mode.png";
 import heroCarton from "../ijapa-assets-main/Group 100.png";
 import ijapalogo from "../ijapa-assets-main/Layer_1.png";
+import ContactUs from "./ContactUs";
 
 export default function Hero() {
+  const [OpenContact, setOpenContact] = useState(false);
+  // const [popup, setPopup] = useState(false);
+  function ContactUsModal() {
+    setOpenContact(true);
+  }
   return (
     <div className="App hero bg-[url('../src/ijapa-assets-main/header_bcg.png')] bg-no-repeat bg-cover min-h-full">
       <nav className="flex  mx-auto w-full items-center justify-between p-8">
         <img src={ijapalogo} className="ijapa-logo mx-10" alt="ijapa-logo" />
         <ul className="flex justify-between mx-8 p-8 text-lg">
-          <li className="mx-8">Contact us</li>
+          <li className="mx-8" onClick={ContactUsModal}>
+            Contact us
+          </li>
           <li>Help Center</li>
         </ul>
       </nav>
@@ -27,6 +36,8 @@ export default function Hero() {
         className="hero-image flex items-center justify-center m-auto mt-0 w-[20vw]"
         alt="hero-image"
       />
+
+      {OpenContact && <ContactUs cancel={OpenContact} send={setOpenContact} />}
     </div>
   );
 }
