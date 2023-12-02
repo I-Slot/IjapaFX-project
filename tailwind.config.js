@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      kiddosy: ["kiddosy Free Regular"],
+      kiddosy: ["Kiddosy Free Regular"],
     },
   },
   plugins: [],

@@ -1,5 +1,5 @@
 body {
-  font-family: "kiddosy Free Regular";
+  font-family: "Kiddosy Free Regular";
 }
 ul > li {
   color: #6a371a;
@@ -86,11 +86,11 @@ li::marker {
   margin-top: 30px;
 }
 
-.policy {
+/* .policy {
   font-size: 64px;
-  /* align-items: center; */
+  align-items: center;
   text-align: center;
-}
+} */
 
 .icon {
   aspect-ratio: 1;
@@ -119,4 +119,13 @@ li::marker {
   overflow: auto;
   background-color: rgba(0, 0, 0, 0, 0.5);
   z-index: 1;
+}
+
+.cancel {
+  border: 1px solid #3e6100;
+}
+
+.textarea {
+  width: 64%;
+  height: 150px;
 }

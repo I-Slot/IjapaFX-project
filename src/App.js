@@ -4,6 +4,7 @@ import Folktales from "./components/Folktales";
 import Footer from "./components/Footer";
 import Feature from "./components/Feature";
 import Popup from "./components/Popup";
+import Waitlist from "./components/Waitlist";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Hero />
         <Folktales />
         <Feature />
+        <Waitlist />
         <Footer />
       </header>
     </div>

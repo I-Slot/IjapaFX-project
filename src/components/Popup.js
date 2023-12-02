@@ -14,10 +14,12 @@ export default function Popup({ x, y }) {
         <div className="h-[563px] modal">
           <div className=" flex justify-between">
             <h1 className="policy">Terms and conditions</h1>
+
             <img
               src={cancle}
               className="icon p-10"
               onClick={handleClosePopup}
+              alt=" "
             />
           </div>
           <p className=" w-[1236px] flex-paragraph">

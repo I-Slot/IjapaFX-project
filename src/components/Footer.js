@@ -3,6 +3,10 @@ import layerLogo from "../ijapa-assets-main/Layer_1 (3).png";
 import { Icon } from "@fortawesome/fontawesome-svg-core";
 import Popup from "./Popup";
 import PrivacyPopup from "./PolicyPopup";
+import facebooklogo from "../ijapa-assets-main/Facebook.png";
+import instsgramlogo from "../ijapa-assets-main/ri_instagram-fill.png";
+import twitterlogo from "../ijapa-assets-main/Twitter.png";
+import linkednlogo from "../ijapa-assets-main/linkedin.png";
 
 export default function Footer() {
   const [popup, setPopup] = useState(false);
@@ -16,7 +20,7 @@ export default function Footer() {
   }
 
   return (
-    <div className="h-[32rem] bg-black  ">
+    <div className=" bg-black h-[535px] ">
       <div className="text-center text-white flex justify-center items-center flex-col">
         <img src={layerLogo} className="mt-10" />
 
@@ -53,19 +57,32 @@ export default function Footer() {
               Terms & conditions
             </li>
           </a>
-          <li className="m-5 text-white" onClick={handlePrivacyPopup}>
-            {" "}
-            Privacy policy
-          </li>
-          <li className="m-5 text-white">Help center</li>
+          <a href="#">
+            <li className="m-5 text-white" onClick={handlePrivacyPopup}>
+              Privacy policy
+            </li>
+          </a>
+          <a href="#">
+            <li className="m-5 text-white">Help center</li>
+          </a>
         </ul>
         <ul className="flex justify-end mx-10  ">
-          <li className="m-5 text-white">Terms & conditions</li>
-          <li className="m-5 text-white"> Privacy policy</li>
-          <li className="m-5 text-white">Help center</li>
+          <li className="m-5 text-white">
+            <img src={facebooklogo} />
+          </li>
+          <li className="m-5 text-white">
+            {" "}
+            <img src={instsgramlogo} />
+          </li>
+          <li className="m-5 text-white">
+            <img src={twitterlogo} />
+          </li>
+          <li className="m-5 text-white">
+            <img src={linkednlogo} />
+          </li>
         </ul>
       </div>
-      <small className="text-white flex justify-center items-center font-[14px]">
+      <small className="text-[#D4D0C8] p-[3] flex justify-center items-center font-[14px]">
         Copyright 2023, Verazoom Limited. All rights reserved
       </small>
 
